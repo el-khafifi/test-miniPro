@@ -6,8 +6,12 @@ import { Book } from '../models/book';
 })
 export class BookService {
 
-  books:Book[]=[{title:"bookTitle",content:"bookContent"}]
+  books:Book[]=[{title:"bookTitle",content:"bookContent"},{title:"bookTitle2",content:"bookContent2"}]
 
   constructor() { }
+
+  getAllBooks(){
+    return this.books
+  }
 
 }
